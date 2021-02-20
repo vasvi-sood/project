@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Web 3 Demo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+     <style>
+
+     h1{
+       text-align: center;
+     }
+     table{
+       margin: auto;
+     }
+     th{
+       padding: 40px;
+     }
+     a{
+       text-align: center;
+     }
+     button{
+        padding: 10px 15px;
+        border-radius: 2px;
+        border: none;
+        cursor: pointer;
+        margin-left:40%;
+        width: 20%;
+        border-radius: 2px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color:#03a9f4;
+
+     }
+
+     </style>
+
+</head>
+
+<body>
+
+
+      <h1>Total appeals</h1>
+
+            <table class="table">
+
+              <thead>
+                <tr>
+
+                  <th scope="col">Appeal id</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Occupation</th>
+                  <th scope="col">Home address</th>
+                </tr>
+              </thead>
+              <tbody id="appealers">
+              </tbody>
+            </table>
+
+               <a href="payment.html"> <button>Donate</button></a>
+
+            <p id="accountAddress" class="text-center"></p>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/AppDonate.js"></script>
+
+</body>
+
+</html>
+
+<!--  <script type="text/javascript">
+        
+ // var url_infura='https://mainnet.infura.io/v3/c91ea7adc56147c991482d5d14f00a3f';
+//var web3=new Web3(url_infura)
+
+
+
+
+
+        async function loadWeb3() {
+            //const Web3= require('web3');
+            //window.ethereum.enable();
+            if (window.ethereum) {
+                window.web3 = new Web3(window.ethereum);
+                window.ethereum.enable();
+            }
+            if (typeof window.ethereum !== 'undefined') {
+  console.log('MetaMask is installed!');
+}
+else
+ console.log('MetaMask is  not installed!');
+        }
+
+        async function loadContract() {
+            return await new window.web3.eth.Contract([
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            }
+        ],
+        "name": "appeal",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "by",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            }
+        ],
+        "name": "Appeal",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            }
+        ],
+        "name": "pay",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "appealers",
+        "outputs": [
+            {
+                "internalType": "address payable",
+                "name": "adr",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "time",
+                "type": "uint256"
+            },
+            {
+                "internalType": "bool",
+                "name": "reg",
+                "type": "bool"
+            },
+            {
+                "internalType": "uint256",
+                "name": "asked",
+                "type": "uint256"
+            },
+            {
+                "internalType": "bool",
+                "name": "grant",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+],'0x43a10EE75E497BaE06f82Cd10DfB51317B7F209D', { from: '0x686c7F4f874B40507206BEb71Bf1889A5A61977e', // default from address
+    gasPrice: '20000000000' // default gas price in wei, 20 gwei in this case
+   });
+        }
+
+        async function printCoolNumber() {
+            updateStatus('fetching Cool Number...');
+            const coolNumber = await window.contract.methods.coolNumber().call();
+            updateStatus(`coolNumber: ${coolNumber}`);
+        }
+
+        async function getCurrentAccount() {
+            const accounts = await window.web3.eth.getAccounts();
+            return accounts[0];r
+        }
+
+        async function changeCoolNumber() {
+            const value = Math.floor(Math.random() * 100);
+            updateStatus(`Updating coolNumber with ${value}`);
+            const account = await getCurrentAccount();
+            const coolNumber = await window.contract.methods.setCoolNumber(value).send({ from: account });
+            updateStatus('Updated.');
+        }
+
+        async function load() {
+            await loadWeb3();
+            window.contract = await loadContract();
+            updateStatus('Ready!');
+        }
+
+        function updateStatus(status) {
+            const statusEl = document.getElementById('status');
+            statusEl.innerHTML = status;
+            console.log(status);
+        }
+
+        load();
+    </script> -->

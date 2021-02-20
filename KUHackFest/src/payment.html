@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form</title>
+
+  <style>
+
+    .firstpay {
+
+      margin: auto;
+      display: block;
+      width: 40%;
+      background-color: rgba(255, 255, 255, 0.1);
+
+    }
+
+    .firstpay label {
+    }
+
+    .firstpay input {
+      width: 100%;
+      padding: 10px 3px;
+      margin: 10px 0px;
+      box-sizing: border-box;
+      border: 1.5px solid black;
+      border-radius: 2px;
+    }
+    .firstpay button{
+      margin: auto;
+      text-align: center;
+    }
+    .firstpay .donation{
+       padding: 10px 15px;
+        border-radius: 2px;
+        border: none;
+        cursor: pointer;
+        /* margin: 5px; */
+        width: 100%;
+        border-radius: 2px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color:#03a9f4;
+        transition: 0.2s;
+
+    }
+    .firstpay .donation:hover{
+      background-color: #028bca;
+      color: white;
+
+    }
+
+    h1 {
+      font-family: sans-serif;
+      font-weight: bold;
+      margin: 30px;
+      padding-top: 15pxpx;
+      text-align: center;
+      padding: 30px;
+    }
+
+    p {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="firstpay">
+    <form action="">
+
+      <h1>Payment information</h2>
+        <label for="name">Enter the id you want to donate to</label>
+        <input type="text" id="name" placeholder="eg. 3"></input>
+
+        <p id="warn"></p>
+        <label for="">Card type</label>
+
+        <select name="card type" id="cardtype">
+          <option value="">---select a card type--</option>
+          <option value="rupaya">Rupaya</option>
+          <option value="visa">Visa</option>
+          <option value="master card">Master card</option>
+        </select>
+        <br>
+
+        <label for="">Card number</label>
+        <input type="number" name="card_number" id="card_number">
+
+        <label for="">Expiration Date</label>
+        <input type="date" name="exp_date" id="exp_date">
+
+        <label for="">CVV</label>
+        <input type="password" name="cvv" id="cvv">
+
+        <label for=""> Address</label>
+        <input type="text" name="address" id="address">
+
+        <button class="donation" type="submit" value="Donate Now" onclick="App.donate()">Donate Now </button>
+
+
+    </form>
+
+  </div>
+  <p id="accountAddress" class="text-center"></p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/AppPay.js"></script>
+</body>
+
+</html>

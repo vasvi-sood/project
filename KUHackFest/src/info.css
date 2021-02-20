@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #f3eac2;
+}
+
+/* header --starts here */
+.navbar {
+  background: linear-gradient(to left, #fc00ff, #00dbde);
+  padding: 1rem 1rem;
+}
+
+.navbar .navbar-brand {
+  font-size: 2.5rem;
+  color: #fc00ff;
+  font-family: 'Pacifico', cursive;
+}
+
+.navbar .navbar-brand a {
+  padding: 1rem 0;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  background-color: #03a9f4;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 22px;
+  height: 4px;
+  background: #fff;
+}
+
+.navbar-toggler span+span {
+  margin-top: 4px;
+  width: 18px;
+  margin-left: 4px;
+}
+
+.navbar-toggler span+span+span {
+  width: 10px;
+  margin-left: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 1rem 1rem;
+  font-size: 1.4rem;
+  position: relative;
+  color: white;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 900;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  border-top: 4px solid #03a9f4;
+}
+
+.navbar .navbar-nav button {
+  padding: 1rem 0;
+}
+
+.navbar .navbar-nav .btn {
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid #fff;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: -10px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.navbar .navbar-nav .btn:hover {
+  background-color: white;
+  color: #03a9f4;
+}
+
+@media only screen and (min-width:1024px) {
+  .blurrycontent {
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    overflow: visible;
+    position: fixed;
+    box-shadow: 5px 5px 2px linear-gradient(to left, #fc00ff, #00dbde);
+    z-index: 16;
+  }
+
+  .blurrycontent .navbar .nav-link {
+    margin-bottom: 10px;
+  }
+
+  .blurrycontent .navbar {
+    height: 9.8rem;
+  }
+
+  .blurrycontent .navbar .navbar-brand {
+    margin-top: 15px;
+  }
+}
+
+/* header --ends here */
+.why{
+  margin-top:5%;
+  margin-bottom: 2%;
+  margin-left:30%;
+  font-size: 4em;
+  color:#1a1a2e;
+  /* font-weight: bold; */
+}
+p{
+  margin-left:3%;
+}
+
+/* footer Section */
+footer{
+  padding: 10px;
+  background-color: #1a1a2e;
+  margin-top: 5%;
+}
+.row{
+  margin-top: 40px;
+}
+footer .row .explore h1{
+  color: white;
+  justify-content: center;
+  margin-bottom: 3%;
+  margin-left: 30%;
+
+}
+footer .row .explore a{
+  color: white;
+  text-decoration: none;
+  margin-left: 30%;
+}
+ .explore a:hover{
+  text-shadow: 1px 1px 1px white;
+  justify-content: center;
+  border-radius: 5px;
+
+}
+footer .row .touch h1{
+  color: white;
+}
+footer .row .touch .foot a:hover{
+  text-decoration: underline;
+}
+footer .row .touch .foot .footer-icons{
+  margin-left: 20px;
+  font-size: 30px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+footer .Copyright{
+  margin-bottom: 40px;
+  margin-top:  50px;
+  font-size: 1.2rem;
+  font-family: cursive;
+  color: white;
+  text-align: center;
+}

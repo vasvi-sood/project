@@ -42,12 +42,10 @@ Some rules that Govern it's Working:
 #### Additional Rules
 * Once the appealer recieves the packets for 6 months, she cannot appeal for next 6 months.This has been done so as to avoid further selling of pads.
 * No-body can both appeal as well as donate to themselves.
-![Screenshot (239)](https://user-images.githubusercontent.com/76619050/107145345-d8371000-6966-11eb-8be5-0289a23232a2.png)
-
-![Screenshot (240)](https://user-images.githubusercontent.com/76619050/107145444-79be6180-6967-11eb-845b-a1bc3cd00b82.png)
-![Screenshot (241)](https://user-images.githubusercontent.com/76619050/107145451-8478f680-6967-11eb-9dd5-ba15ca8d9164.png)
-
-![Screenshot (242)](https://user-images.githubusercontent.com/76619050/107145454-8773e700-6967-11eb-92f2-6559a142010a.png)
-![Screenshot (243)](https://user-images.githubusercontent.com/76619050/107145455-893daa80-6967-11eb-9074-a39fac5f4593.png)
-![Screenshot (238)](https://user-images.githubusercontent.com/76619050/107145459-935fa900-6967-11eb-9497-b79aa5cf61b2.png)
-![Screenshot (244)](https://user-images.githubusercontent.com/76619050/107145496-ee919b80-6967-11eb-8856-674df78d7a0d.png)
+![Screenshot (246)](https://user-images.githubusercontent.com/76619050/108609840-c0e03400-73f6-11eb-9d3b-89781df21e83.png)
+![Screenshot (247)](https://user-images.githubusercontent.com/76619050/108609843-c50c5180-73f6-11eb-8fad-53297ffabc9b.png)
+![Screenshot (248)](https://user-images.githubusercontent.com/76619050/108609844-c63d7e80-73f6-11eb-903b-6a8ae2843e90.png)
+![Screenshot (249)](https://user-images.githubusercontent.com/76619050/108609846-c76eab80-73f6-11eb-9f4c-b6ceb960f456.png)
+![Screenshot (250)](https://user-images.githubusercontent.com/76619050/108609847-c8074200-73f6-11eb-8ddc-b36f16a7d1c2.png)
+![Screenshot (251)](https://user-images.githubusercontent.com/76619050/108609848-c89fd880-73f6-11eb-9437-6323e079c323.png)
+![Screenshot (252)](https://user-images.githubusercontent.com/76619050/108609850-c9386f00-73f6-11eb-9900-5c9911c52da7.png)
